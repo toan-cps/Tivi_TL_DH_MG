@@ -64,7 +64,7 @@ h1{text-align:center;padding:14px 10px 6px;font-size:20px;color:#333}
 
 /* ── Data cell ── */
 .pm-table td.data-cell{
-  vertical-align:top;padding:5px;border:1px solid #ddd;
+  vertical-align:bottom;padding:5px;border:1px solid #ddd;
   background:#fafafa;min-width:90px
 }
 .pm-table td.data-cell:hover{background:#f0f4ff}
@@ -230,6 +230,23 @@ const ICON_CT='<svg width="10" height="10" viewBox="0 0 10 10" fill="currentColo
 const ICON_CN='<svg width="10" height="10" viewBox="0 0 10 10" fill="currentColor"><polygon points="0,0 10,5 0,10"/></svg>';
 const ICON_BN='<svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 1v10M1 6h10M3 3l6 6M9 3l-6 6"/></svg>';
 
+function extractSize(item){
+  if(item.cat==='TL'){
+    const m=item.m.match(/(\d+(?:\.\d+)?)\s*L\b/i);
+    return m?m[1]+'L':null;
+  }
+  if(item.cat==='MG'){
+    if(item.func==='GIATSAY'){
+      // "GIẶT 12KG - SẤY 8KG" hoặc "GIẶT 10.5 - SẤY 7KG"
+      const m=item.m.match(/GI[ĂẶặă][Tt]\s*(\d+(?:[.,]\d+)?)\s*KG?\s*[-–]\s*S[ẤấAa][Yy]\s*(\d+(?:[.,]\d+)?)\s*KG/i);
+      if(m) return m[1]+'KG/'+m[2]+'KG';
+    }
+    const m=item.m.match(/(\d+(?:[.,]\d+)?)\s*KG/i);
+    return m?m[1].replace(',','.')+'KG':null;
+  }
+  return null;
+}
+
 function makeCard(item, hideDoorIcon){
   const cls=brandClass(item.b);
   const drs=item.drs?' drs':'';
@@ -244,7 +261,10 @@ function makeCard(item, hideDoorIcon){
     else if(item.door==='BN') icons+=`<span class="card-icon">${ICON_BN}</span>`;
   }
   const price=fmtPrice(item.p);
-  const brandLine=price?`${item.b} (${price})`:item.b;
+  const size=extractSize(item);
+  const brandLine=size
+    ? `${item.b} - ${size} - ${price}`
+    : (price?`${item.b} (${price})`:item.b);
   const codeMatch=item.m.match(/\(([^)]+)\)\s*$/);
   const code=codeMatch?codeMatch[1]:item.m;
   return `<div class="card ${cls}${drs}" onclick="window.open('${item.url}','_blank','noopener')"

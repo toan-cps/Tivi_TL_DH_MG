@@ -16,13 +16,14 @@ h1{text-align:center;padding:14px 10px 6px;font-size:20px;color:#333}
 .cat-tab.active{background:#1a56db;color:#fff;border-color:#1a56db}
 
 /* ── Sub tabs ── */
-.sub-tabs-row{display:flex;align-items:center;gap:10px;padding:6px 12px;flex-wrap:wrap}
+.sub-tabs-row{display:flex;flex-direction:column;align-items:flex-start;gap:6px;padding:6px 12px}
 .sub-tabs{display:flex;gap:6px;flex-wrap:wrap}
 .sub-tab{padding:6px 16px;border-radius:14px;border:1.5px solid #bbb;background:#fff;
   cursor:pointer;font-size:13px;font-weight:600}
 .sub-tab.active{background:#e53935;color:#fff;border-color:#e53935}
 .drs-note{font-size:12px;color:#555;border:1px dashed #bbb;border-radius:8px;
-  padding:5px 12px;background:#fffde7;flex:1;min-width:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  padding:5px 12px;background:#fffde7;white-space:normal;
+  width:min(420px,100%);line-height:1.5}
 
 /* ── Filter bar ── */
 .filter-bar{display:flex;flex-wrap:wrap;gap:5px;padding:4px 12px 8px}

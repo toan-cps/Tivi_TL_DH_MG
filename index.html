@@ -41,20 +41,15 @@ h1{text-align:center;padding:14px 10px 6px;font-size:20px;color:#333}
   background:#2c3e50;color:#fff;font-size:13px;font-weight:700;
   padding:7px 6px;text-align:center;border:1px solid #445;white-space:nowrap
 }
-.pm-table thead th:first-child{
-  background:#2c3e50
-}
 .pm-table thead th .sub-lbl{font-size:11px;font-weight:400;opacity:.85;display:block}
 
 /* ── Y-label cell ── */
 .y-lbl-cell{
-  background:#34495e;color:#fff;font-size:11px;font-weight:700;
+  background:#34495e;color:#fff;font-size:13px;font-weight:700;
   writing-mode:horizontal-tb;text-align:center;vertical-align:middle;
-  padding:4px 5px;border:1px solid #445;white-space:nowrap;
-  width:58px;min-width:58px;max-width:58px;
-  position:sticky;left:0;z-index:2
+  padding:6px 8px;border:1px solid #445;white-space:nowrap;min-width:70px
 }
-.y-lbl-cell .price-sub{font-size:10px;font-weight:400;opacity:.8;display:block}
+.y-lbl-cell .price-sub{font-size:11px;font-weight:400;opacity:.8;display:block}
 
 /* ── Section header row ── */
 .sec-hdr td{
@@ -65,7 +60,7 @@ h1{text-align:center;padding:14px 10px 6px;font-size:20px;color:#333}
 
 /* ── Data cell ── */
 .pm-table td.data-cell{
-  vertical-align:bottom;padding:5px;border:1px solid #ddd;
+  vertical-align:top;padding:5px;border:1px solid #ddd;
   background:#fafafa;min-width:90px
 }
 .pm-table td.data-cell:hover{background:#f0f4ff}
@@ -102,13 +97,12 @@ h1{text-align:center;padding:14px 10px 6px;font-size:20px;color:#333}
 .MITSUBISHI{background:#A050C8;color:#fff;border:1.5px solid #8840AA}
 .GREE{background:#2AABA0;color:#fff;border:1.5px solid #228C82}
 .MIDEA{background:#E06060;color:#fff;border:1.5px solid #C84848}
-.COOCAA{background:#7090A8;color:#fff;border:1.5px solid #587888}
 .DEFAULT{background:#7A9AAA;color:#fff;border:1.5px solid #608090}
 
 /* ── Legend ── */
-.legend{display:flex;flex-wrap:wrap;gap:10px;padding:10px 14px 6px;align-items:center}
-.legend-item{display:flex;align-items:center;gap:6px;font-size:14px;font-weight:600}
-.legend-box{width:16px;height:16px;border-radius:3px;border:1.5px solid #888}
+.legend{display:flex;flex-wrap:wrap;gap:8px;padding:8px 12px 4px;align-items:center}
+.legend-item{display:flex;align-items:center;gap:5px;font-size:12px}
+.legend-box{width:14px;height:14px;border-radius:3px;border:1.5px solid #888}
 .legend-drs .legend-box{border-style:dashed;border-width:2px;border-color:#333;background:#e0e0e0}
 
 /* ── cat/sub sections ── */
@@ -128,33 +122,14 @@ h1{text-align:center;padding:14px 10px 6px;font-size:20px;color:#333}
 <h1>Product Map &#272;i&#7879;n M&#225;y &#8211; T6/2026</h1>
 
 <div class="legend">
-  <span style="font-weight:700;font-size:14px">Ghi ch&#250;:</span>
+  <span style="font-weight:700;font-size:12px">Ghi ch&#250;:</span>
   <div class="legend-item"><div class="legend-box" style="background:#546E7A;border-color:#37474F"></div> B&#225;n th&#432;&#7901;ng</div>
   <div class="legend-item legend-drs"><div class="legend-box"></div> DRS/Dropship</div>
-  <div class="legend-item">
-    <svg width="16" height="16" viewBox="0 0 16 16" fill="#333"><rect x="0" y="0" width="6.5" height="6.5" rx="1"/><rect x="9.5" y="0" width="6.5" height="6.5" rx="1"/><rect x="0" y="9.5" width="6.5" height="6.5" rx="1"/><rect x="9.5" y="9.5" width="6.5" height="6.5" rx="1"/></svg>
-    Multidoor
-  </div>
-  <div class="legend-item">
-    <svg width="13" height="17" viewBox="0 0 13 17" fill="#333"><rect x="0" y="0" width="5.5" height="17" rx="2"/><rect x="7.5" y="0" width="5.5" height="17" rx="2"/></svg>
-    Side by Side
-  </div>
-  <div class="legend-item">
-    <svg width="13" height="17" viewBox="0 0 13 17" fill="#333"><rect x="0.5" y="0.5" width="12" height="7" rx="1.5" fill="none" stroke="#333" stroke-width="1.5"/><rect x="0.5" y="9.5" width="12" height="7" rx="1.5"/></svg>
-    Ng&#259;n &#273;&#225; d&#432;&#7899;i
-  </div>
-  <div class="legend-item">
-    <svg width="14" height="14" viewBox="0 0 14 14" fill="#333"><polygon points="7,1 13,13 1,13"/></svg>
-    C&#7917;a Tr&#234;n
-  </div>
-  <div class="legend-item">
-    <svg width="14" height="14" viewBox="0 0 14 14" fill="#333"><polygon points="1,1 13,7 1,13"/></svg>
-    C&#7917;a Ngang
-  </div>
-  <div class="legend-item">
-    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="#333" stroke-width="1.8"><path d="M7 1v12M1 7h12M3 3l8 8M11 3l-8 8"/></svg>
-    B&#417;m Nhi&#7879;t
-  </div>
+  <div class="legend-item"><span style="font-size:13px">&#127968;</span> Multidoor / Side by Side</div>
+  <div class="legend-item"><span style="font-size:13px">&#10052;</span> Ng&#259;n &#273;&#225; d&#432;&#7899;i</div>
+  <div class="legend-item"><span style="font-size:13px">&#9650;</span> C&#7917;a Tr&#234;n</div>
+  <div class="legend-item"><span style="font-size:13px">&#9654;</span> C&#7917;a Ngang</div>
+  <div class="legend-item"><span style="font-size:13px">&#9832;</span> B&#417;m Nhi&#7879;t</div>
 </div>
 
 <div class="cat-tabs" id="catTabs"></div>
@@ -165,13 +140,13 @@ const _D="W3siY2F0IjogIlRJVkkiLCAiYiI6ICJDT09DQUEiLCAibSI6ICJEUlMgLSBHT09HTEUgVE
 const RAW=JSON.parse(atob(_D));
 
 const PRICE_BANDS=[
-  {id:'Tren30M',lbl:'Trên 30M',  sub:'> 30 triệu'},
-  {id:'25-30M', lbl:'25 – 30M',  sub:'25–30 triệu'},
-  {id:'20-25M', lbl:'20 – 25M',  sub:'20–25 triệu'},
-  {id:'15-20M', lbl:'15 – 20M',  sub:'15–20 triệu'},
-  {id:'10-15M', lbl:'10 – 15M',  sub:'10–15 triệu'},
-  {id:'05-10M', lbl:'5 – 10M',   sub:'5–10 triệu'},
   {id:'0<5M',   lbl:'Dưới 5M',   sub:'< 5 triệu'},
+  {id:'05-10M', lbl:'5 – 10M',   sub:'5–10 triệu'},
+  {id:'10-15M', lbl:'10 – 15M',  sub:'10–15 triệu'},
+  {id:'15-20M', lbl:'15 – 20M',  sub:'15–20 triệu'},
+  {id:'20-25M', lbl:'20 – 25M',  sub:'20–25 triệu'},
+  {id:'25-30M', lbl:'25 – 30M',  sub:'25–30 triệu'},
+  {id:'Tren30M',lbl:'Trên 30M',  sub:'> 30 triệu'},
 ];
 
 const CATS=[
@@ -209,7 +184,6 @@ const MG_FUNCS=[
 
 // ── visible cols state ────────────────────────────────────────────────────────
 const visibleCols={};
-let activeMGFunc='GIAT';
 
 function brandClass(b){
   const s=b.toUpperCase().replace(/\s+/g,'').replace(/[^A-Z0-9]/g,'');
@@ -238,7 +212,6 @@ function extractSize(item){
   }
   if(item.cat==='MG'){
     if(item.func==='GIATSAY'){
-      // "GIẶT 12KG - SẤY 8KG" hoặc "GIẶT 10.5 - SẤY 7KG"
       const m=item.m.match(/GI[ĂẶặă][Tt]\s*(\d+(?:[.,]\d+)?)\s*KG?\s*[-–]\s*S[ẤấAa][Yy]\s*(\d+(?:[.,]\d+)?)\s*KG/i);
       if(m) return m[1]+'KG/'+m[2]+'KG';
     }
@@ -277,15 +250,14 @@ function makeCard(item, hideDoorIcon){
 
 function colW(items, colId){
   let max=0;
-  for(const pb of PRICE_BANDS){
+  for(const pb of [...PRICE_BANDS].reverse()){
     const n=items.filter(x=>x.r===colId && x.pkg===pb.id).length;
     if(n>max) max=n;
   }
   if(max===0) return '80px';
   if(max<=2) return '160px';
-  if(max<=7) return '220px';   // 2 cards/row
-  if(max<=11) return '330px';  // 3 cards/row (8–11 items)
-  return '440px';              // 4 cards/row (12+ items)
+  if(max<=4) return '220px';
+  return '280px';
 }
 
 // ── Standard table (TIVI, HA, TL, MRB) ──────────────────────────────────────
@@ -294,13 +266,13 @@ function buildTable(catKey, subset, cols, visColIds){
   if(!visCols.length) return '<p style="padding:12px;color:#888">Không có sản phẩm.</p>';
 
   let h=`<div class="tbl-wrap"><table class="pm-table"><thead><tr>
-    <th style="width:58px;min-width:58px;max-width:58px">Giá</th>`;
+    <th style="min-width:70px">Giá</th>`;
   for(const c of visCols)
     h+=`<th style="width:${colW(subset,c.id)}">${c.lbl}</th>`;
   h+=`</tr></thead><tbody>`;
 
   let hasAny=false;
-  for(const pb of PRICE_BANDS){
+  for(const pb of [...PRICE_BANDS].reverse()){
     const rowItems=subset.filter(x=>x.pkg===pb.id);
     if(!rowItems.length) continue;
     let hasInRow=visCols.some(c=>rowItems.some(x=>x.r===c.id));
@@ -308,7 +280,7 @@ function buildTable(catKey, subset, cols, visColIds){
     hasAny=true;
     h+=`<tr><td class="y-lbl-cell">${pb.lbl}<span class="price-sub">${pb.sub}</span></td>`;
     for(const c of visCols){
-      const cards=rowItems.filter(x=>x.r===c.id).sort((a,b)=>b.p-a.p).map(makeCard).join('');
+      const cards=rowItems.filter(x=>x.r===c.id).map(makeCard).join('');
       h+=`<td class="data-cell">${cards}</td>`;
     }
     h+=`</tr>`;
@@ -325,7 +297,7 @@ function buildMGTable(subset, mgFunc, visColIds){
   if(!cols.length||!visDoors.length) return '<p style="padding:12px;color:#888">Không có sản phẩm.</p>';
 
   let h=`<div class="tbl-wrap"><table class="pm-table"><thead><tr>
-    <th style="width:58px;min-width:58px;max-width:58px">Giá</th>`;
+    <th style="min-width:70px">Giá</th>`;
   for(const c of cols) h+=`<th style="width:${colW(subset,c.id)}">${c.lbl}</th>`;
   h+=`</tr></thead><tbody>`;
 
@@ -335,7 +307,7 @@ function buildMGTable(subset, mgFunc, visColIds){
     if(!doorItems.length) continue;
     const colspan=cols.length+1;
     h+=`<tr class="sec-hdr"><td colspan="${colspan}"><span class="sec-icon">${door.icon}</span>${door.lbl}</td></tr>`;
-    for(const pb of PRICE_BANDS){
+    for(const pb of [...PRICE_BANDS].reverse()){
       const rowItems=doorItems.filter(x=>x.pkg===pb.id);
       if(!rowItems.length) continue;
       let hasInRow=cols.some(c=>rowItems.some(x=>x.r===c.id));
@@ -343,7 +315,7 @@ function buildMGTable(subset, mgFunc, visColIds){
       hasAny=true;
       h+=`<tr><td class="y-lbl-cell">${pb.lbl}<span class="price-sub">${pb.sub}</span></td>`;
       for(const c of cols){
-        const cards=rowItems.filter(x=>x.r===c.id).sort((a,b)=>b.p-a.p).map(x=>makeCard(x,true)).join('');
+        const cards=rowItems.filter(x=>x.r===c.id).map(makeCard).join('');
         h+=`<td class="data-cell">${cards}</td>`;
       }
       h+=`</tr>`;
@@ -352,55 +324,6 @@ function buildMGTable(subset, mgFunc, visColIds){
   if(!hasAny) h+=`<tr><td colspan="${cols.length+1}" style="padding:16px;color:#888;text-align:center">Không có sản phẩm</td></tr>`;
   h+=`</tbody></table></div>`;
   return h;
-}
-
-// ── MG func section with per-func kg filter ──────────────────────────────────
-function buildMGFuncSection(mfItems, mf, parentEl){
-  const visKey='MG_'+mf.id;
-  if(!visibleCols[visKey]) visibleCols[visKey]=mf.cols.map(c=>c.id);
-  const allIds=mf.cols.map(c=>c.id);
-
-  const wrapper=document.createElement('div');
-
-  const titleEl=document.createElement('div');
-  titleEl.className='section-title';
-  titleEl.innerHTML=`${mf.icon} ${mf.lbl} <span style="font-size:12px;color:#888">(${mfItems.length} SP)</span>`;
-  wrapper.appendChild(titleEl);
-
-  const fbEl=document.createElement('div');
-  fbEl.className='filter-bar';
-
-  const tblEl=document.createElement('div');
-  tblEl.innerHTML=buildMGTable(mfItems, mf, visibleCols[visKey]);
-
-  const btnAll=document.createElement('button');
-  btnAll.className='filter-btn active'; btnAll.textContent='Tất cả';
-  btnAll.onclick=()=>{
-    visibleCols[visKey]=allIds.slice();
-    fbEl.querySelectorAll('.filter-btn').forEach(b=>b.classList.remove('active'));
-    btnAll.classList.add('active');
-    tblEl.innerHTML=buildMGTable(mfItems, mf, visibleCols[visKey]);
-  };
-  fbEl.appendChild(btnAll);
-
-  for(const c of mf.cols){
-    const btn=document.createElement('button');
-    btn.className='filter-btn active'; btn.textContent=c.lbl;
-    btn.setAttribute('data-col',c.id);
-    btn.onclick=()=>{
-      btn.classList.toggle('active');
-      const sel=fbEl.querySelectorAll('.filter-btn.active:not(:first-child)');
-      visibleCols[visKey]=[...sel].map(b=>b.getAttribute('data-col'));
-      if(visibleCols[visKey].length===allIds.length) btnAll.classList.add('active');
-      else btnAll.classList.remove('active');
-      tblEl.innerHTML=buildMGTable(mfItems, mf, visibleCols[visKey]);
-    };
-    fbEl.appendChild(btn);
-  }
-
-  wrapper.appendChild(fbEl);
-  wrapper.appendChild(tblEl);
-  parentEl.appendChild(wrapper);
 }
 
 // ── Filter bar ────────────────────────────────────────────────────────────────
@@ -449,12 +372,15 @@ function renderCat(catKey){
     if(!cont) return;
 
     if(catKey==='MG'){
-      cont.innerHTML='';
-      const mf=MG_FUNCS.find(f=>f.id===activeMGFunc);
-      if(!mf){ cont.innerHTML='<p style="padding:16px;color:#888">Không có sản phẩm.</p>'; return; }
-      const mfItems=subset.filter(x=>x.func===mf.id);
-      if(!mfItems.length){ cont.innerHTML='<p style="padding:16px;color:#888">Không có sản phẩm.</p>'; return; }
-      buildMGFuncSection(mfItems, mf, cont);
+      let html='';
+      for(const mf of MG_FUNCS){
+        const mfItems=subset.filter(x=>x.func===mf.id);
+        if(!mfItems.length) continue;
+        const visC=visibleCols[catKey]||mf.cols.map(c=>c.id);
+        html+=`<div class="section-title">${mf.icon} ${mf.lbl} <span style="font-size:12px;color:#888">(${mfItems.length} SP)</span></div>`;
+        html+=buildMGTable(mfItems, mf, visC);
+      }
+      cont.innerHTML=html||'<p style="padding:16px;color:#888">Không có sản phẩm.</p>';
     } else {
       const visC=visibleCols[catKey]||cat.cols.map(c=>c.id);
       cont.innerHTML=buildTable(catKey, subset, cat.cols, visC);
@@ -529,25 +455,9 @@ function init(){
 
     catSec.appendChild(catDiv);
 
-    // MG: add func-type tabs (Máy Giặt / Máy Sấy / Giặt Sấy)
+    // build filter for this cat (no filter for MG – each sub-table has different cols)
     if(cat.id==='MG'){
-      const mgFuncBar=document.createElement('div');
-      mgFuncBar.className='sub-tabs';
-      mgFuncBar.style.cssText='background:#f0f4ff;border-top:1px solid #dde;padding:6px 12px;';
-      MG_FUNCS.forEach(mf=>{
-        const fbtn=document.createElement('button');
-        fbtn.className='sub-tab'+(mf.id===activeMGFunc?' active':'');
-        fbtn.innerHTML=`${mf.icon} ${mf.lbl}`;
-        fbtn.onclick=()=>{
-          activeMGFunc=mf.id;
-          mgFuncBar.querySelectorAll('.sub-tab').forEach(b=>b.classList.remove('active'));
-          fbtn.classList.add('active');
-          renderCat('MG');
-        };
-        mgFuncBar.appendChild(fbtn);
-      });
-      // insert before filterBar
-      catDiv.insertBefore(mgFuncBar, filterBar);
+      // no filter bar for MG
     } else if(cat.cols.length>1){
       buildFilter(cat.id, cat.cols, 'filter-'+cat.id);
     }
@@ -557,32 +467,6 @@ function init(){
 }
 
 init();
-
-// ── Sticky header: set max-height on active sub-sections ─────────────────────
-function updateSubHeight(){
-  document.querySelectorAll('.sub-section.active').forEach(el=>{
-    const t=el.getBoundingClientRect().top;
-    if(t>0) el.style.maxHeight=(window.innerHeight-t-8)+'px';
-  });
-}
-window.addEventListener('resize', updateSubHeight);
-document.querySelectorAll('.cat-tab,.sub-tab').forEach(b=>
-  b.addEventListener('click',()=>setTimeout(updateSubHeight,60))
-);
-setTimeout(updateSubHeight, 150);
-
-// ── Ẩn tab Máy Rửa Bát nếu không có dữ liệu ──────────────────────────────────
-(function hideMRBIfEmpty(){
-  const hasMRB=RAW.some(x=>x.cat==='MRB');
-  if(!hasMRB){
-    document.querySelectorAll('.cat-tab').forEach(btn=>{
-      if(btn.textContent.includes('RỬA BÁT')||btn.textContent.includes('MRB'))
-        btn.style.display='none';
-    });
-    const sec=document.getElementById('cat-MRB');
-    if(sec) sec.style.display='none';
-  }
-})();
 </script>
 </body>
 </html>
